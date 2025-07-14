@@ -39,7 +39,7 @@ const Sidebar = () => {
 
         <div className="relative flex flex-col flex-wrap md:flex-row bg-blend-color bg-purple-300">    
             <a className = "flex items-center ml-4 md:ml-14" href="/"> 
-                <img src="/public/logos/navbarlogo.png" className="w-40"></img>
+                <img src="/logos/navbarlogo.png" className="w-40"></img>
             </a>
                 <Navbarcomponent navLinkString="/" navString="Home"></Navbarcomponent>
                 <Navbarcomponent navLinkString="/about" navString="About"></Navbarcomponent>

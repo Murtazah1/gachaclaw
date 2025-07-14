@@ -18,18 +18,18 @@ export default function Home( ) {
   return (
     <>
     <div className="scroll-smooth">
-    <img src="/public/logos/playclawmachines.png" className="w-fit h-fit"></img>
+    <img src="/logos/playclawmachines.png" className="w-fit h-fit"></img>
     <h1 className="text-center text-gray-800 text-xl font-extrabold m-5 animate-bounce">  Featured</h1> 
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
-      <GameBoxComponent imgsrc="/public/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
+      <GameBoxComponent imgsrc="/logos/prizeTime.png" gameName = "cuddlykittens"/>
 
 
     <div className="rounded md:mx-24 my-8">
@@ -76,7 +76,7 @@ export default function Home( ) {
           <div className="flex items-center ml-4 md:ml-14">
             <img
 							className="mr-4"
-							src={	"/public/logos/main-logo.png"
+							src={	"/logos/main-logo.png"
 							}
 							alt="Logo"
 							width="72"
