@@ -3,14 +3,14 @@ import type PongGame from "~/routes/pong-game";
 
 const PongGameWebGLBuild = () => {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "build/webgl/PongGameWebGL.loader.js",
-    dataUrl: "build//webgl/PongGameWebGL.data.unityweb",
-    frameworkUrl: "build/webgl/PongGameWebGL.framework.js.unityweb",
-    codeUrl: "build/webgl/PongGameWebGL.wasm.unityweb",
+    loaderUrl: "build/webgl/Build.loader.js",
+    dataUrl: "build//webgl/Build.data.unityweb",
+    frameworkUrl: "build/webgl/Build.framework.js.unityweb",
+    codeUrl: "build/webgl/Build.wasm.unityweb",
   });
 
   return (
-    <div>
+    <div className="flex relative bg-black-200">
         <Unity unityProvider={unityProvider} />
     </div>
   );

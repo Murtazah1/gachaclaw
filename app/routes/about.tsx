@@ -1,3 +1,8 @@
 export default function About(){
-    return <div> Hey, welcome to the about page. </div>
+    return (
+    <>
+        <img src = "/public/logos/howitworks.png" className="w-fit"></img>
+        <div> Hey, welcome to the about page. </div>
+    </>
+    );
 }

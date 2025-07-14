@@ -10,6 +10,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import Sidebar from "src/common/Sidebar";
 import PongGameWebGLBuild from "src/webgl";
 
 export const links: Route.LinksFunction = () => [
@@ -45,36 +46,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-  <div className="App"> 
-  <div className = "navbar">
-    <NavLink to ="/" style = {({isActive, isPending, isTransitioning}) => 
-      ({color: isActive?"red": "blue"})}> 
-      Home    
-    </NavLink>
-
-    <NavLink to ="/about" style = {({isActive, isPending, isTransitioning}) => 
-      ({color: isActive?"red": "blue"})}> 
-      About   
-    </NavLink>    
-    
-    <NavLink to ="/dashboard" style = {({isActive, isPending, isTransitioning}) => 
-      ({color: isActive?"red": "blue"})}> 
-      Dashboard       
-    </NavLink>    
-    
-    <NavLink to ="/ponggame" style = {({isActive, isPending, isTransitioning}) => 
-      ({color: isActive?"red": "blue"})}> 
-      PongGame     
-    </NavLink>
-
-    <NavLink to ="/post/6" style = {({isActive, isPending, isTransitioning}) => 
-      ({color: isActive?"red": "blue"})}> 
-      Post6    
-    </NavLink>
-
-  </div>
+    <>
+    <main className="my-5">
+      <div className="App"> 
+        <div> 
+          <Sidebar />
+        </div>
+      </div>
     <Outlet />
-  </div>
+    </main>
+  </>
   );
 }
 

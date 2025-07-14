@@ -1,3 +1,3 @@
 export default function Finances(){
-    return <div> Showing Finances </div>
+    return <div className="text-2xl"> Showing Finances </div>
 }

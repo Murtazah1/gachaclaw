@@ -5,6 +5,7 @@ export default [
     route("about","routes/about.tsx"),
     route("post/:postId", "routes/post.tsx"),
     route("ponggame", "routes/pong-game.tsx"),
+    route("login", "routes/login.tsx"),
 
     // nested routes
     route("dashboard", "routes/dashboard.tsx", /*child route array*/[
