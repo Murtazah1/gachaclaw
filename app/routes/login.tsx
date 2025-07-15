@@ -2,11 +2,22 @@ import type React from "react";
 import { useState } from "react";
 import { Form } from "react-router";
 
+const Register = () => {
+    const[values, setValues] = useState({
+        username: "",
+        email: "",
+        password: "",
+    })
+}
 
+const handleChanges = (e: any) => {
+    setValues({...values, [e.target.name]: [e.target.value]})
+}
+const handleSubmit = (e:any) => {
+
+}
 
 export default function Login(){
-
-
     return (
         <>
             <div className = "flex w-full h-screen">
@@ -20,6 +31,7 @@ export default function Login(){
                                 <input 
                                     id = "email"
                                     className="w-full border-2 border-gray-100 bg-white rounded-xl p-4 mt-1"
+                                    type="email"
                                     placeholder = "Enter your email"
                                 />
                             </div>
