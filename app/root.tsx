@@ -12,6 +12,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import Sidebar from "src/common/Sidebar";
 import PongGameWebGLBuild from "src/webgl";
+import { CurrencyProvider } from "src/context/CurrencyContext";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -46,18 +47,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <>
-    <main className="my-5">
-      <div className="App"> 
-        <div> 
+    <CurrencyProvider>
+      <main className="my-5">
+        <div className="App"> 
           <Sidebar />
         </div>
-      </div>
-    <Outlet />
-    </main>
-  </>
+        <Outlet />
+      </main>
+    </CurrencyProvider>
   );
 }
+
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = "Oops!";

@@ -6,8 +6,8 @@ export default function PongGame(){
         <h1>
             PongGame
         </h1>
-        <div className = "w-100 h-100 flex relative justify-items-center">
-            <PongGameWebGLBuild/>
+        <div className="w-full h-full flex items-center justify-center">
+            <PongGameWebGLBuild />
         </div>
         </>
     )
