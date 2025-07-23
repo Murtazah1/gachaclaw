@@ -11,6 +11,7 @@ import {
 import type { Route } from "./+types/root";
 import "./app.css";
 import Sidebar from "src/common/Sidebar";
+import NavBar from "src/common/NavBar";
 import PongGameWebGLBuild from "src/webgl";
 
 export const links: Route.LinksFunction = () => [
@@ -47,10 +48,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <>
-    <main className="my-5">
+    <main className="">
       <div className="App"> 
         <div> 
-          <Sidebar />
+          <NavBar />
         </div>
       </div>
     <Outlet />
