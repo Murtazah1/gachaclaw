@@ -56,7 +56,7 @@ export default function App() {
               <NavBar />
             </div>
             <Outlet />
-          </div> {/* <-- Closing div for className="App" */}
+          </div> 
         </main>
       </>
     </CurrencyProvider>
